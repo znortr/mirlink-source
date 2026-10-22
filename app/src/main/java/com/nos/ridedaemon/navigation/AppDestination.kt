@@ -1,0 +1,7 @@
+package com.nos.ridedaemon.navigation
+
+sealed class AppDestination(val route: String) {
+    data object Hud: AppDestination("hud")
+    data object QrScan: AppDestination("qr_scan")
+    data object Login: AppDestination("login")
+}
